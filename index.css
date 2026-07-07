@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Public Sans", sans-serif;
+}
+
+body {
+  color: #141b2c;
+  font-family: var(--font-sans);
+  background-color: #f6f8fd;
+}
+
+/* 
+  Elegant Municipal Architectural Grid Background
+  Combines a subtle radial dot grid with a soft ambient linear transition
+*/
+.civic-background {
+  background-color: #f6f8fd;
+  background-image: 
+    radial-gradient(circle at 1.5px 1.5px, rgba(0, 52, 111, 0.04) 1.5px, transparent 0),
+    linear-gradient(135deg, #f9faff 0%, #f1f4fc 100%);
+  background-size: 24px 24px, 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Glassmorphism accents */
+.civic-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom zebra rows for tables matching screenshots */
+.zebra-row:nth-child(even) {
+  background-color: rgba(235, 242, 250, 0.6);
+}
