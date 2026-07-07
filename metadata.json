@@ -1,0 +1,6 @@
+{
+  "name": "CivicPortal",
+  "description": "A transparent, accountable public service portal for reporting, tracking, and resolving civic complaints in real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
